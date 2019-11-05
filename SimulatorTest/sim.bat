@@ -1,0 +1,1 @@
+java -jar OCPPSimulatorWeb-0.01.jar

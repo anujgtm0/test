@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [softwaretestingmaterial]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Authorize RFID(failed)">
+    <classes>
+      <class name="Simulator.SimulatorTest.AuthorizeSuccessfull">
+        <methods>
+          <include name="sendboot" invocation-numbers="0"/>
+          <include name="opensimulator" invocation-numbers="0"/>
+          <include name="Authenticate" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Simulator.SimulatorTest.AuthorizeSuccessfull -->
+    </classes>
+  </test> <!-- Authorize RFID(failed) -->
+  <test thread-count="5" name="Start Transaction(failed)">
+    <classes>
+      <class name="Simulator.SimulatorTest.TillStartTransaction">
+        <methods>
+          <include name="StartTrans" invocation-numbers="0"/>
+          <include name="Authenticate" invocation-numbers="0"/>
+          <include name="opensimulator" invocation-numbers="0"/>
+          <include name="sendboot" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Simulator.SimulatorTest.TillStartTransaction -->
+    </classes>
+  </test> <!-- Start Transaction(failed) -->
+  <test thread-count="5" name="Stop Transaction(failed)">
+    <classes>
+      <class name="Simulator.SimulatorTest.TillStopTransaction">
+        <methods>
+          <include name="StartTrans" invocation-numbers="0"/>
+          <include name="sendboot" invocation-numbers="0"/>
+          <include name="Authenticate" invocation-numbers="0"/>
+          <include name="StopTrans" invocation-numbers="0"/>
+          <include name="afterclass"/>
+          <include name="opensimulator" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Simulator.SimulatorTest.TillStopTransaction -->
+    </classes>
+  </test> <!-- Stop Transaction(failed) -->
+</suite> <!-- Failed suite [softwaretestingmaterial] -->

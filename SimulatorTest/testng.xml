@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="softwaretestingmaterial">
+	
+	
+	<test name="Boot Notification">
+	<classes>
+	<class name="Simulator.SimulatorTest.SendBootOnly"/>
+	</classes>
+	
+	</test>
+	
+	<test name="Authorize RFID">
+	<classes>
+	<class name="Simulator.SimulatorTest.AuthorizeSuccessfull"/>
+	</classes>
+	</test>
+	<test name="Start Transaction">
+	<classes>
+	<class name="Simulator.SimulatorTest.TillStartTransaction"/>
+	</classes>
+	</test>
+	<test name="Stop Transaction">
+	<classes>
+	<class name="Simulator.SimulatorTest.TillStopTransaction"/>
+	</classes>
+	</test>
+	
+</suite>
